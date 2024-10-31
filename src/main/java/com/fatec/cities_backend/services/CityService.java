@@ -16,7 +16,7 @@ import jakarta.persistence.EntityNotFoundException;
 @Service
 public class CityService {
     @Autowired
-    CityRepository cityRepository;
+    private CityRepository cityRepository;
 
     public List<CityResponse> getAll(){
         return cityRepository.findAll()
@@ -52,7 +52,7 @@ public class CityService {
         city.setCountry(request.country());
         city.setMayor(request.mayor());
         city.setPopulation(request.population());
-        city.setGdp(request.gdp());
+        city.setGdpPerCapita(request.gdpPerCapita());
 
         cityRepository.save(city);
     }

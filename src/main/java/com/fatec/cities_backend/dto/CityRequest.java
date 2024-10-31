@@ -25,7 +25,7 @@ public record CityRequest(
     Integer population,
     
     @NotNull(message = "Population can't be null")
-    Double gdp
+    Double gdpPerCapita
 ) {
 
 }

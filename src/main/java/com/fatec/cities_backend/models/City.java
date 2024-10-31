@@ -17,7 +17,7 @@ public class City {
     private String country;
     private String mayor;
     private Integer population;
-    private Double gdp;
+    private Double gdpPerCapita;
 
     public City() {}
 
@@ -28,7 +28,7 @@ public class City {
         this.country = country;
         this.mayor = mayor;
         this.population = population;
-        this.gdp = gdp;
+        this.gdpPerCapita = gdp;
     }
 
     public Long getId() {
@@ -79,11 +79,11 @@ public class City {
         this.population = population;
     }
 
-    public Double getGdp() {
-        return gdp;
+    public Double getGdpPerCapita() {
+        return gdpPerCapita;
     }
 
-    public void setGdp(Double gdp) {
-        this.gdp = gdp;
+    public void setGdpPerCapita(Double gdp) {
+        this.gdpPerCapita = gdp;
     }
 }

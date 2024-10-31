@@ -7,7 +7,7 @@ public record CityResponse(
     String country,
     String mayor,
     Integer population,
-    Double gdp
+    Double gdpPerCapita
 ) {
     
 }

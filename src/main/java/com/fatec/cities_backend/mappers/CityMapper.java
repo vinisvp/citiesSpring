@@ -12,12 +12,12 @@ public class CityMapper {
         city.setCountry(request.country());
         city.setMayor(request.mayor());
         city.setPopulation(request.population());
-        city.setGdp(request.gdp());
+        city.setGdpPerCapita(request.gdpPerCapita());
 
         return city;
     }
 
     public static CityResponse toDto(City city){
-        return new CityResponse(city.getId(), city.getName(), city.getState(), city.getCountry(), city.getMayor(), city.getPopulation(), city.getGdp());
+        return new CityResponse(city.getId(), city.getName(), city.getState(), city.getCountry(), city.getMayor(), city.getPopulation(), city.getGdpPerCapita());
     }
 }
